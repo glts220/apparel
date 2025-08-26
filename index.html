@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&family=UnifrakturMaguntia&display=swap" rel="stylesheet">>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLTS220 Apparel - Faith & Darkness</title>
+  <title>GAL Apparel - Wear eternity.</title>
   <style>
-  #about {
-  background-color: #111; /* fondo oscuro */
-  padding: 40px;
-  text-align: center;
-  border-top: 2px solid #8B0000;
-  border-bottom: 2px solid #8B0000;
-}
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto:wght@300;500&display=swap');
 
-#about h2 {
-  font-family: 'UnifrakturCook', cursive;
-  font-size: 2.5rem;
-  color: #8B0000;
-  text-shadow: 3px 3px 6px black;
-  margin-bottom: 20px;
-}
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #000;
+      color: #eee;
+    }
 
-#about p {
-  font-family: 'UnifrakturMaguntia', cursive;
-  font-size: 1.2rem;
-  color: #f5f5f5;
-  text-shadow: 2px 2px 5px #000;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
+    header {
+      background: linear-gradient(180deg, #111, #000);
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 2px solid #b10000;
+    }
+
+    h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: #b10000;
+      letter-spacing: 2px;
+    }
+
     p.tagline {
       margin-top: 0.5rem;
-      font-size: 1.05rem;
+      font-size: 1.2rem;
       font-weight: 300;
-      color: var(--silver);
-      letter-spacing: 0.5px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    nav a {
-      color: #ddd;
-      text-decoration: none;
-      font-size: 0.95rem;
-      border: 1px solid #333;
-      padding: 0.5rem 0.8rem;
-      border-radius: 8px;
-      transition: 0.25s ease;
-    }
-
-    nav a:hover {
-      border-color: var(--blood);
-      color: #fff;
+      color: #aaa;
     }
 
     .container {
@@ -66,35 +41,26 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       padding: 2rem;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .card {
-      background: var(--carbon);
+      background: #111;
       border: 1px solid #333;
-      border-radius: 14px;
+      border-radius: 12px;
       text-align: center;
       padding: 1rem;
-      transition: transform 0.3s ease, border-color 0.3s ease;
-      overflow: hidden;
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      border-color: var(--blood);
+      transform: translateY(-5px);
+      border-color: #b10000;
     }
 
     .card img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
+      max-width: 100%;
+      border-radius: 8px;
       margin-bottom: 1rem;
-      background: #0a0a0a;
-      border: 1px solid #2a2a2a;
     }
 
     .card h2 {
@@ -102,116 +68,64 @@
       font-size: 1.6rem;
       color: #fff;
       margin: 0.5rem 0;
-      letter-spacing: 0.5px;
     }
 
     .price {
-      font-size: 1.1rem;
-      color: var(--blood);
-      margin: 0.35rem 0 1rem;
-      font-weight: 500;
+      font-size: 1.2rem;
+      color: #b10000;
+      margin: 0.5rem 0 1rem;
     }
 
     .btn {
-      background: var(--blood);
+      background: #b10000;
       color: #fff;
-      padding: 0.7rem 1.2rem;
+      padding: 0.7rem 1.4rem;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: bold;
-      transition: filter 0.3s ease, background 0.3s ease;
-      display: inline-block;
+      transition: background 0.3s;
     }
 
-    .btn:hover { filter: brightness(1.1); }
+    .btn:hover {
+      background: #900;
+    }
 
     footer {
       text-align: center;
-      padding: 1.2rem;
-      font-size: 0.92rem;
-      background: var(--carbon);
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #111;
       border-top: 1px solid #333;
       margin-top: 2rem;
-      color: #cfcfcf;
-    }
-
-    .legal {
-      opacity: 0.7;
-      font-size: 0.85rem;
-      margin-top: 0.4rem;
     }
   </style>
 </head>
 <body>
- <header>
-  <img src="logogala.png" alt="GLTS220 Apparel" style="height:120px;">
-</header>
-    <nav>
-      <a href="#store">Store</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <h1>GAL Apparel</h1>
+    <p class="tagline">Fe, oscuridad y estilo</p>
   </header>
 
-  <main id="store" class="container">
+  <main class="container">
     <!-- Producto 1 -->
     <div class="card">
-      <img src="camiseta1.jpg" alt="Camiseta GLTS220 - Cruz de Hierro">
+      <img src="camiseta1.jpg" alt="Camiseta Cruz">
       <h2>Cruz de Hierro</h2>
       <p class="price">30€</p>
-      <!-- Reemplaza el enlace con tu botón de pago (PayPal/Stripe/MercadoPago) -->
-      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
+      <a class="btn" href="https://www.paypal.com/buy?hosted_button_id=XXXXXX">Comprar</a>
     </div>
 
     <!-- Producto 2 -->
     <div class="card">
-      <img src="camiseta2.jpg" alt="Camiseta GLTS220 - Salmo 23">
+      <img src="camiseta2.jpg" alt="Camiseta Versículo Oscuro">
       <h2>Salmo 23</h2>
       <p class="price">32€</p>
-      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
-    </div>
-
-    <!-- Producto 3 -->
-    <div class="card">
-      <img src="camiseta3.jpg" alt="Camiseta GLTS220 - Gal 2:20">
-      <h2>Gálatas 2:20</h2>
-      <p class="price">32€</p>
-      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
+      <a class="btn" href="https://www.paypal.com/buy?hosted_button_id=YYYYYY">Comprar</a>
     </div>
   </main>
 
- <section id="about" class="container" style="padding-top:0;">
-    <div class="card" style="grid-column: 1/-1; text-align:left;">
-      <h2 style="text-align:center;">Gálatas 2:20</h2>
-      <p>
-       "Ya no vivo yo, es Cristo quien vive en mí. Y aunque al presente vivo en carne, vivo en la fe del Hijo de Dios, que me amó y se entregó por mí."
-      </p>
-    </div>
-  </section>
-  
-  <section id="about" class="container" style="padding-top:0;">
-    <div class="card" style="grid-column: 1/-1; text-align:left;">
-      <h2 style="text-align:center;">¿Qué es Gálatas 2:20?</h2>
-      <p>
-        GLTS220 es una marca alternativa nacida entre sombras y fe. Camisetas negras premium, gráficos góticos y mensajes que arden:
-        luz en la oscuridad. Hechas para durar, pensadas para contar tu historia.
-      </p>
-    </div>
-  </section>
-
-  <section id="about" class="container" style="padding-top:0;">
-    <div class="card" style="grid-column: 1/-1; text-align:left;">
-      <h2 style="text-align:center;">Contacto</h2>
-      <p>
-        Correo: glts220@proton.me</p>
-      <p>
-        Instagram: @glts2.20 (opcional)</p>
-    </div>
-  </section>
-
   <footer>
-    <div>© 2025 GLTS220 Apparel — Wear eternity.</div>
-    <div class="legal">"Que el señor te reprenda.” Judas 1:9</div>
+    <p>© 2025 GAL Apparel | “Luz en la oscuridad”</p>
   </footer>
 </body>
 </html>
