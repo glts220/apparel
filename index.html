@@ -3,37 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAL Apparel - Wear eternity.</title>
+  <title>GAL Apparel - Faith & Darkness</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto:wght@300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Jim+Nightshade&display=swap');
 
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Jim Nightshade', cursive;
       background: #000;
-      color: #eee;
+      color: #ccc;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     header {
-      background: linear-gradient(180deg, #111, #000);
+      background: #000;
       text-align: center;
-      padding: 2rem 1rem;
-      border-bottom: 2px solid #b10000;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 2px solid #550a0a;
     }
 
-    h1 {
-      font-family: 'UnifrakturCook', cursive;
-      font-size: 3rem;
-      margin: 0;
-      color: #b10000;
-      letter-spacing: 2px;
+    header img {
+      max-width: 400px;
+      width: 80%;
+      animation: slideDown 1s ease-out;
     }
 
-    p.tagline {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      font-weight: 300;
-      color: #aaa;
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     .container {
@@ -45,16 +47,17 @@
 
     .card {
       background: #111;
-      border: 1px solid #333;
+      border: 1px solid #550a0a;
       border-radius: 12px;
       text-align: center;
       padding: 1rem;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
 
     .card:hover {
       transform: translateY(-5px);
-      border-color: #b10000;
+      box-shadow: 0 0 20px rgba(85,10,10,0.8);
     }
 
     .card img {
@@ -66,28 +69,84 @@
     .card h2 {
       font-family: 'UnifrakturCook', cursive;
       font-size: 1.6rem;
-      color: #fff;
+      color: #550a0a;
       margin: 0.5rem 0;
+      text-shadow: 2px 2px 5px black;
     }
 
     .price {
       font-size: 1.2rem;
-      color: #b10000;
+      color: #772020;
       margin: 0.5rem 0 1rem;
     }
 
     .btn {
-      background: #b10000;
+      background: #550a0a;
       color: #fff;
       padding: 0.7rem 1.4rem;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
       transition: background 0.3s;
+      font-family: 'UnifrakturCook', cursive;
     }
 
     .btn:hover {
-      background: #900;
+      background: #330505;
+    }
+
+    /* Secciones de abajo */
+    .info-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      border-top: 2px solid #550a0a;
+      border-bottom: 2px solid #550a0a;
+      background: #111;
+    }
+
+    .info-card {
+      background: #000;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    .info-card h3 {
+      font-family: 'UnifrakturCook', cursive;
+      color: #550a0a;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .info-card p {
+      font-family: 'Jim Nightshade', cursive;
+      color: #ccc;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .contact-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-icons svg {
+      fill: #550a0a;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .contact-icons span {
+      color: #ccc;
+      font-size: 1.2rem;
     }
 
     footer {
@@ -102,8 +161,7 @@
 </head>
 <body>
   <header>
-    <h1>GAL Apparel</h1>
-    <p class="tagline">Fe, oscuridad y estilo</p>
+    <img src="logogala.png" alt="Gálatas 2:20 Logo">
   </header>
 
   <main class="container">
@@ -112,7 +170,7 @@
       <img src="camiseta1.jpg" alt="Camiseta Cruz">
       <h2>Cruz de Hierro</h2>
       <p class="price">30€</p>
-      <a class="btn" href="https://www.paypal.com/buy?hosted_button_id=XXXXXX">Comprar</a>
+      <a class="btn" href="#">Comprar</a>
     </div>
 
     <!-- Producto 2 -->
@@ -120,12 +178,58 @@
       <img src="camiseta2.jpg" alt="Camiseta Versículo Oscuro">
       <h2>Salmo 23</h2>
       <p class="price">32€</p>
-      <a class="btn" href="https://www.paypal.com/buy?hosted_button_id=YYYYYY">Comprar</a>
+      <a class="btn" href="#">Comprar</a>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="card">
+      <img src="camiseta3.jpg" alt="Camiseta Gálatas">
+      <h2>Gálatas 2:20</h2>
+      <p class="price">32€</p>
+      <a class="btn" href="#">Comprar</a>
     </div>
   </main>
 
+  <!-- Secciones de abajo -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>Gálatas 2:20</h3>
+      <p>"Ya no vivo yo, es Cristo quien vive en mí. Y aunque al presente vivo en carne, vivo en la fe del Hijo de Dios, que me amó y se entregó por mí."</p>
+    </div>
+
+    <div class="info-card">
+      <h3>¿Qué es Gálatas 2:20?</h3>
+      <p>Por hijos de Dios, para hijos de Dios. Inspirada en nuestra fuerza espiritual y en el arte gótico, busca vestir la convicción y el carácter de quienes no temen mostrar lo que creen.</p>
+    </div>
+
+    <div class="info-card contact-icons">
+      <h3>Contacto</h3>
+      <div>
+        <!-- Icono carta -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 
+        1.1.89 2 1.99 2H20c1.1 0 2-.9 
+        2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 
+        5 8-5v2z"/></svg>
+        <span>glts220@proton.me</span>
+      </div>
+      <div>
+        <!-- Icono Instagram -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.243 
+        2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 
+        5-5V7c0-2.757-2.243-5-5-5H7zm10 
+        2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 
+        3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 
+        1.346-3 3-3h10zm-5 3a5 5 0 1 0 
+        0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 
+        6 3 3 0 0 1 0-6zm4.5-.5a1.5 1.5 0 1 0 
+        0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+        <span>@glts2.20</span>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2025 GAL Apparel | “Luz en la oscuridad”</p>
+    <p>© 2025 GLTS220 Apparel | “Wear eternity.”</p>
   </footer>
 </body>
 </html>
