@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLTS220 Apparel - Faith & Darkness</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto:wght@300;500&display=swap');
+
+    :root {
+      --black: #000;
+      --carbon: #111;
+      --ink: #222;
+      --blood: #b10000;
+      --silver: #aaa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--black);
+      color: #eee;
+    }
+
+    header {
+      background: linear-gradient(180deg, var(--carbon), var(--black));
+      text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      border-bottom: 2px solid var(--blood);
+    }
+
+    h1 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: var(--blood);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    p.tagline {
+      margin-top: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--silver);
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: 1px solid #333;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      border-color: var(--blood);
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--carbon);
+      border: 1px solid #333;
+      border-radius: 14px;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--blood);
+    }
+
+    .card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background: #0a0a0a;
+      border: 1px solid #2a2a2a;
+    }
+
+    .card h2 {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 1.6rem;
+      color: #fff;
+      margin: 0.5rem 0;
+      letter-spacing: 0.5px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      color: var(--blood);
+      margin: 0.35rem 0 1rem;
+      font-weight: 500;
+    }
+
+    .btn {
+      background: var(--blood);
+      color: #fff;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: filter 0.3s ease, background 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover { filter: brightness(1.1); }
+
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.92rem;
+      background: var(--carbon);
+      border-top: 1px solid #333;
+      margin-top: 2rem;
+      color: #cfcfcf;
+    }
+
+    .legal {
+      opacity: 0.7;
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GLTS220</h1>
+    <p class="tagline">Creer. Resistir. Vestir.</p>
+    <nav>
+      <a href="#store">Store</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="store" class="container">
+    <!-- Producto 1 -->
+    <div class="card">
+      <img src="camiseta1.jpg" alt="Camiseta GLTS220 - Cruz de Hierro">
+      <h2>Cruz de Hierro</h2>
+      <p class="price">30€</p>
+      <!-- Reemplaza el enlace con tu botón de pago (PayPal/Stripe/MercadoPago) -->
+      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="card">
+      <img src="camiseta2.jpg" alt="Camiseta GLTS220 - Salmo 23">
+      <h2>Salmo 23</h2>
+      <p class="price">32€</p>
+      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="card">
+      <img src="camiseta3.jpg" alt="Camiseta GLTS220 - Gal 2:20">
+      <h2>Gálatas 2:20</h2>
+      <p class="price">32€</p>
+      <a class="btn" href="#" title="Añade tu enlace de pago">Comprar</a>
+    </div>
+  </main>
+
+  <section id="about" class="container" style="padding-top:0;">
+    <div class="card" style="grid-column: 1/-1; text-align:left;">
+      <h2 style="text-align:center;">Sobre GLTS220</h2>
+      <p>
+        GLTS220 es una marca alternativa nacida entre sombras y fe. Camisetas negras premium, gráficos góticos y mensajes que arden:
+        luz en la oscuridad. Hechas para durar, pensadas para contar tu historia.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="container" style="padding-top:0;">
+    <div class="card" style="grid-column: 1/-1; text-align:left;">
+      <h2 style="text-align:center;">Contacto</h2>
+      <p>Correo: glts220@proton.me (ejemplo, cámbialo por el tuyo)</p>
+      <p>Instagram: @glts220 (opcional)</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2025 GLTS220 Apparel — Faith & Darkness</div>
+    <div class="legal">Luz en la oscuridad • “Creer. Resistir. Vestir.”</div>
+  </footer>
+</body>
+</html>
